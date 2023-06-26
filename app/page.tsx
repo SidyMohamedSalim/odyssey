@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Search */}
 
-      <section className="mx-2 my-10">
+      <section className="mx-2 my-16">
         <div className="max-w-5xl mx-auto my-4 h-96 bg-cover bg-[url('/carte.jpg')]">
           <div className="bg-[rgba(0,0,0,0.3)] w-full h-full flex items-center justify-center">
             <form action="" className="mx-auto w-full px-10 relative">
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Section Best */}
-      <section className="relative my-10">
+      <section className="relative my-16">
         <div className="max-w-5xl mx-auto my-4 h-[32rem] bg-cover bg-[url('/photo3.jpg')]">
           <div className="bg-[rgba(0,0,0,0.3)] w-full h-full flex items-end  justify-start">
             <div className="p-4 text-white">
@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       {/* Les meilleurs Categories */}
-      <section className="relative my-12">
+      <section className="relative my-16">
         <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
           <div className="mx-6">
             {/* title section */}
@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Last Search */}
-      <section className="relative my-12">
+      <section className="relative my-16">
         <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
           <div className="mx-6">
             {/* title section */}
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* Consultes Recemment */}
-      <section className="relative my-12">
+      <section className="relative my-16">
         <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
           <div className="mx-6">
             {/* title section */}
@@ -193,7 +193,7 @@ export default function Home() {
       </section>
 
       {/* Suggestions */}
-      <section className="relative my-12">
+      <section className="relative my-16">
         <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
           <div className="mx-6">
             {/* title section */}
@@ -208,6 +208,128 @@ export default function Home() {
               <BlocB desc={"Palmarés global"} image={"/photo1.jpg"} />
               <BlocB desc={"Experience d'une vie"} image={"/photo8.jpg"} />
               <BlocB desc={"Gastronomie"} image={"/photo9.jpg"} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Artivle */}
+      <section className="relative my-6">
+        <div className="max-w-5xl  flex mx-auto h-50 ">
+          <div className="flex bg-orange-100 mx-4">
+            <div className="p-4">
+              <h1 className="font-semibold text-2xl">
+                Tokyo pour les amateurs de pizza
+              </h1>
+              <p className="l line-clamp-1 mt-1 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+                dolorum culpa ipsam distinctio eligendi in delectus facilis
+                quis? Pariatur accusantium voluptate aut quo beatae itaque ut
+                et, consequatur officiis distinctio.
+              </p>
+              <Btn title="Voir le liste" />
+            </div>
+            <div>
+              <Image
+                width={800}
+                height={800}
+                className="h-full"
+                alt=""
+                src={"/photo10.jpg"}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section */}
+      <section className="relative my-16">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl mb-2">
+                Différentes façons de visiter Fès
+              </h1>
+              <p className="text-md">
+                Réservez ces expériences pour approfondir votre découverte de
+                Fès.
+              </p>
+            </div>
+            {/* content */}
+            <div className="flex max-sm:overflow-visible ">
+              <BlocB desc={"Palmarés global"} image={"/photo4.jpg"} />
+              <BlocB desc={"Experience d'une vie"} image={"/photo3.jpg"} />
+              <BlocB desc={"Gastronomie"} image={"/photo10.jpg"} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section */}
+      <section className="relative my-16">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl mb-2">
+                Des séjours à la plage pour lézarder au soleil
+              </h1>
+              <p className="text-md">
+                Des eaux turquoise, du sable fin et des aventures inoubliables
+                vous attendent.
+              </p>
+            </div>
+            {/* content */}
+            <div className="flex max-sm:overflow-visible ">
+              <BlocA title={"Sardaigne,Italie"} image={"/photo2.jpg"} />
+              <BlocA title={"Ibiza,Espagne"} image={"/photo3.jpg"} />
+              <BlocA title={"Partimao,Portugal"} image={"/photo4.jpg"} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section don */}
+      <section className="relative my-16">
+        <div className="max-w-5xl mx-auto my-4 h-96 bg-amber-400 flex justify-between p-4">
+          <div>
+            <Image
+              alt=""
+              width={1000}
+              height={1000}
+              className="w-full h-full"
+              src="/carte.jpg"
+            />
+          </div>
+          <div className="m-4 text-center flex flex-col justify-center items-center w-[48%]">
+            <h3 className="text-md my-4 font-light">Fondation Salim</h3>
+            <h1 className="font-bold text-3xl">
+              Aidez-nous à aider la planète
+            </h1>
+            <p className="text-md font-light">
+              La fondation Tripadvisor verse un don équivalent aux dons
+              recueillis par le Climate Disaster Fund de World Central Kitchen.
+            </p>
+            <Btn title="Faire un don" />
+          </div>
+        </div>
+      </section>
+
+      {/* section explorez */}
+      {/* section */}
+      <section className="relative py-3 my-16 bg-red-50">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl my-2">Explorez</h1>
+            </div>
+            {/* content */}
+            <div className="flex max-sm:overflow-visible ">
+              <BlocC desc="" image="/photo4.jpg" />
+              <BlocC desc="" image="/photo2.jpg" />
+              <BlocC desc="" image="/photo3.jpg" />
             </div>
           </div>
         </div>
