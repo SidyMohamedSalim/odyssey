@@ -7,12 +7,12 @@ type blocAProps = {
 };
 const BlocA = ({ title, image }: blocAProps) => {
   return (
-    <div className="bg-red-500 relative  my-4">
+    <div className=" relative  my-4 mr-2">
       <div className="opacity-90">
         <Image
           src={image}
           alt=""
-          className="w-64 h-64"
+          className="w-72 h-72"
           width={600}
           height={600}
         />

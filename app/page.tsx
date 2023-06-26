@@ -91,7 +91,7 @@ export default function Home() {
       {/* Search */}
 
       <section className="mx-2 my-10">
-        <div className="max-w-5xl mx-auto my-4 h-80 bg-cover bg-[url('/carte.jpg')]">
+        <div className="max-w-5xl mx-auto my-4 h-96 bg-cover bg-[url('/carte.jpg')]">
           <div className="bg-[rgba(0,0,0,0.3)] w-full h-full flex items-center justify-center">
             <form action="" className="mx-auto w-full px-10 relative">
               <label
@@ -114,17 +114,100 @@ export default function Home() {
 
       {/* Section Best */}
       <section className="relative my-10">
-        <div className="max-w-5xl mx-auto my-4 h-96 bg-cover bg-[url('/photo3.jpg')]">
+        <div className="max-w-5xl mx-auto my-4 h-[32rem] bg-cover bg-[url('/photo3.jpg')]">
           <div className="bg-[rgba(0,0,0,0.3)] w-full h-full flex items-end  justify-start">
             <div className="p-4 text-white">
               <h1 className="font-semibold text-4xl">
                 Activités Travellers&apos;Choice Best of the Best
               </h1>
               <p className="font-light text-xl">
-                Découvrez la creme de la creme, une selection a partir d&apos;
-                avis authentiques
+                Découvrez la crème de la crème, une selection à partir
+                d&apos;avis authentiques
               </p>
               <Btn title="Voir la liste" isWhite={true} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Les meilleurs Categories */}
+      <section className="relative my-12">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl mb-4">
+                Les meilleures activités par catégorie
+              </h1>
+              <p className="text-md">
+                Les Laureats Travellers&apos;Choice Best of the Best
+              </p>
+            </div>
+            {/* content */}
+            <div className="flex max-sm:overflow-visible ">
+              <BlocA title={"Palmarés global"} image={"/photo2.jpg"} />
+              <BlocA title={"Experience d'une vie"} image={"/photo3.jpg"} />
+              <BlocA title={"Gastronomie"} image={"/photo4.jpg"} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Last Search */}
+      <section className="relative my-12">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl mb-4">
+                Vos dernières recherches
+              </h1>
+            </div>
+            {/* content */}
+            <div className="flex flex-wrap gap-4">
+              <NavIcons title="Dakar" Icon={Search} />
+              <NavIcons title="La meilleure destination" Icon={Search} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Consultes Recemment */}
+      <section className="relative my-12">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl mb-4">
+                Les meilleures activités par catégorie
+              </h1>
+            </div>
+            {/* content */}
+            <div className="flex max-sm:overflow-visible ">
+              <BlocB desc={"Palmarés global"} image={"/photo5.jpg"} />
+              <BlocB desc={"Experience d'une vie"} image={"/photo6.jpg"} />
+              <BlocB desc={"Gastronomie"} image={"/photo7.jpg"} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Suggestions */}
+      <section className="relative my-12">
+        <div className="max-w-5xl mx-auto my-4 h-84 bg-covers">
+          <div className="mx-6">
+            {/* title section */}
+            <div>
+              <h1 className="font-semibold text-2xl mb-2">
+                Vous pourriez aussi aimer
+              </h1>
+              <p className="text-md">Plus Activité sur Dakar</p>
+            </div>
+            {/* content */}
+            <div className="flex max-sm:overflow-visible ">
+              <BlocB desc={"Palmarés global"} image={"/photo1.jpg"} />
+              <BlocB desc={"Experience d'une vie"} image={"/photo8.jpg"} />
+              <BlocB desc={"Gastronomie"} image={"/photo9.jpg"} />
             </div>
           </div>
         </div>

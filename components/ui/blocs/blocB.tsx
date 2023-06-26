@@ -1,10 +1,10 @@
-import { Heart } from "lucide-react";
+import { Heart, LucideIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const BlocB = () => {
+const BlocB = ({ desc, image }: { desc: string; image: string }) => {
   return (
-    <div className="relative mx-3 w-64 my-4">
+    <div className="relative mr-3 w-72 my-4 hover:opacity-50">
       <div className="absolute top-2 right-2 text-xl flex items-center justify-center bg-white px-2 w-8 h-8 rounded-full ">
         <Heart />
       </div>
@@ -12,9 +12,9 @@ const BlocB = () => {
 
       <div>
         <Image
-          src="/photo2.jpg"
+          src={image}
           alt=""
-          className="w-64 h-64"
+          className="w-72 h-72"
           width={600}
           height={600}
         />
