@@ -1,11 +1,17 @@
-import { Heart } from "lucide-react";
+import { Heart, LucideIcon } from "lucide-react";
 import React from "react";
 
-const HeadElIcon = () => {
+type HeadElIconProps = {
+  title: string;
+  Icon: LucideIcon;
+};
+const HeadElIcon = ({ title, Icon }: HeadElIconProps) => {
   return (
-    <div className="flex cursor-pointer items-center px-5 py-3 rounded-3xl hover:bg-slate-100">
-      <Heart className="hover:mr-4 mr-2" />
-      <h1>Voyages</h1>
+    <div className="flex cursor-pointer font-medium items-center px-3 py-3 rounded-3xl hover:bg-slate-100">
+      <span className="mr-1 max-md:text-2xl">
+        <Icon />
+      </span>
+      <h1 className="max-md:hidden">{title}</h1>
     </div>
   );
 };

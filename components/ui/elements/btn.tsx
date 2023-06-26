@@ -5,7 +5,7 @@ const Btn = ({ title, isWhite }: { title: string; isWhite?: boolean }) => {
     <button
       className={
         isWhite
-          ? "bg-white px-6 py-3 my-4 rounded-3xl hover:bg-black hover:text-white"
+          ? "bg-white text-black px-6 py-3 my-4 rounded-3xl hover:bg-black hover:text-white"
           : "bg-black px-6 py-3 my-4 rounded-3xl text-white hover:bg-white hover:text-black"
       }
     >
